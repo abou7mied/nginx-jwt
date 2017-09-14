@@ -51,7 +51,7 @@ function M.auth(claim_specs)
     end
     
     if token_site == "REQUEST" then
-        token = ngx.var.arg_bearer
+        token = ngx.var.arg_jwt
     end
     
     if token == nil then
